@@ -1,0 +1,268 @@
+body{
+    margin: 0;padding: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+/* Header Section */
+
+header
+{
+    height: 60vh;
+    /* position: relative; */
+}
+header::before
+{
+    content: "";
+    background: url(img/bg1.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 0.89;
+}
+#navbar
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    margin-top: -20px;
+}
+#navbar::before
+{
+    content: "";
+    background: black;
+    position:absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    /* margin-top: -20px; */
+
+}
+#navbar #logo img
+{
+    display: inline-block;
+    height: auto;
+    width: 120px;
+}
+#navbar-List
+{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: -20px;
+}
+#navbar-List a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: white;
+    border-radius: 5px;
+}
+#navbar-List a:hover
+{
+    background-color: white;
+    color:black;
+    
+}
+#header-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0;
+    color: white;
+}
+#header-text p{
+    margin-top: -20px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.h-primary
+{
+    font-weight: bold;
+    font-size: 40px;
+}
+.btn
+{
+    border: 2px solid black;
+    color: white;
+    background-color: #f52308a1;
+    border-radius: 4px;
+    padding: 5px 20px;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-size: 15px;
+    font-weight: 600;
+}
+.btn:hover{
+    color: black;
+    background-color: #F5931F;
+}
+
+/* Services Section */
+
+#services-container
+{
+    margin-top: -60px;
+}
+#services-container h1{
+    text-align: center;
+}
+#all-services
+{
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: 600px ;
+    justify-content: center;
+    grid-gap: 20px;
+    /* justify-content: space-evenly; */
+}
+.services
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid brown;
+    padding: 2px 30px;
+    margin: 2px 20px;
+    border-radius: 20px;
+    background-color: rgb(242, 242, 242);
+}
+.services p
+{
+    text-align: center;
+    margin-top: -7px;
+    font-weight: 600;
+}
+.services h2
+{
+    font-size: 2.2rem;
+    text-align: center;
+    font-style: bold;
+}
+.services img
+{
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+
+/* Our Clients */
+
+#clients-container
+{
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    position: relative;
+    /* padding-bottom; */
+}
+#clients-container::before
+{
+    content: "";
+    background: url(img/bg.jpg);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients-container h1
+{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+#clients 
+{
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: 150px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -20px;
+    padding-bottom: -30px;
+}
+#clients img
+{
+    height: 130px;
+    width: 130px;
+}
+
+/* Contact - Us */
+
+#contact-container
+{
+    height: 600px;
+    position: relative;
+}
+#contact-container::before
+{
+    content: "";
+    background: url(img/contact.jpg);
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#contact-container h1
+{
+    text-align: center;
+    font-size: 60px;
+}
+#contact-form
+{
+    margin-top: -35px;
+    display: grid;
+    grid-template-columns: 581px;
+    grid-template-rows: repeat(3,69px) 250px;
+    justify-content: center;
+}
+#contact-form label
+{
+    font-size: 28px;
+    font-weight: 900;
+}
+#contact-form input
+{
+    width: 500px;
+    height: 30px;
+    border: 2px solid black;
+    border-bottom: 2px solid #a1a1a1;
+    border-right: 2px solid #a1a1a1;
+    border-radius: 5px;
+    font-size: 18px;
+}
+#contact-form textarea
+{
+    width: 85%;
+    border-radius: 5px;
+}
+
+/* footer */
+
+#footer
+{
+    height: 35px;
+    margin: -19px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
