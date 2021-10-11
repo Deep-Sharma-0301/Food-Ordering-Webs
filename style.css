@@ -212,7 +212,7 @@ header::before
 #contact-container::before
 {
     content: "";
-    background: url(img/contact.jpg);
+    background: url(img/contact1.jpg);
     background-size: cover;
     position: absolute;
     height: 100%;
